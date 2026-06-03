@@ -4,103 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DesignFox - Creative Digital Agency specializing in Graphic Design, Web Design, Software Development & Digital Marketing">
-    <meta name="keywords" content="graphic design, web design, software development, digital marketing, creative agency">
     <title>DesignFox | Creative Digital Agency</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- ========== NAVIGATION ========== -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Design<span>Fox</span></a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- ========== PRELOADER ========== -->
+    <div class="preloader">
+        <div class="loader">
+            <span>Design</span><span class="highlight">Fox</span>
         </div>
-    </nav>
+    </div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Design<span class="highlight">Fox</span></span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <a href="#contact" class="nav-btn">Get Started</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- ========== HERO SECTION ========== -->
     <section class="hero" id="home">
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
+        <div class="particles" id="particles"></div>
+        <div class="hero-gradient-orb orb-1"></div>
+        <div class="hero-gradient-orb orb-2"></div>
+        <div class="hero-gradient-orb orb-3"></div>
         <div class="container">
-            <div class="hero-content">
-                <span class="subtitle">Welcome to DesignFox</span>
-                <h1>We Craft Digital<br>Experiences That <span>Inspire</span></h1>
-                <p>We are a creative digital agency specializing in Graphic Design, Web Design, Software Development & Digital Marketing. Let's bring your vision to life.</p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Our Services</a>
-                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Creative Digital Agency</span>
+                    </div>
+                    <h1 class="hero-title">
+                        We Build <span class="gradient-text">Digital</span> Products That
+                        <span class="gradient-text">Inspire</span>
+                    </h1>
+                    <p class="hero-desc">Transform your business with cutting-edge graphic design, web development, software solutions, and digital marketing strategies that deliver real results.</p>
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary">
+                            <span>Explore Services</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="btn-video" id="videoBtn">
+                            <div class="video-play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span>Watch Showreel</span>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <h3>350+</h3>
+                            <p>Projects Done</p>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <h3>98%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <h3>8+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-main-shape"></div>
+                        <div class="hero-floating-card card-1">
+                            <div class="floating-card-icon"><i class="fas fa-palette"></i></div>
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="hero-floating-card card-2">
+                            <div class="floating-card-icon"><i class="fas fa-code"></i></div>
+                            <span>Development</span>
+                        </div>
+                        <div class="hero-floating-card card-3">
+                            <div class="floating-card-icon"><i class="fas fa-chart-line"></i></div>
+                            <span>Marketing</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
     </section>
+
+    <!-- ========== VIDEO MODAL ========== -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-content">
+            <button class="video-close" id="videoClose"><i class="fas fa-times"></i></button>
+            <div class="video-container">
+                <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- ========== SERVICES SECTION ========== -->
     <section class="services" id="services">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Our Services</h2>
-                <div class="line"></div>
-                <p>We provide cutting-edge digital solutions to help your business grow and succeed in the modern world.</p>
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Services We <span class="gradient-text">Provide</span></h2>
+                <p class="section-desc">We deliver comprehensive digital solutions that help businesses thrive in the modern world.</p>
             </div>
             <div class="services-grid">
-                <!-- Graphic Design -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-number">01</div>
+                    <div class="service-icon-wrap">
                         <i class="fas fa-palette"></i>
                     </div>
                     <h3>Graphic Design</h3>
-                    <p>Stunning visual designs that communicate your brand message effectively. From logos to complete brand identity systems.</p>
+                    <p>From brand identity to marketing collateral, we create visually stunning designs that communicate your message powerfully.</p>
+                    <ul class="service-features">
+                        <li>Logo & Brand Identity</li>
+                        <li>Print Design</li>
+                        <li>Social Media Graphics</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <!-- Web Design -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <div class="service-card" data-aos="fade-up" data-delay="100">
+                    <div class="service-number">02</div>
+                    <div class="service-icon-wrap">
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Web Design</h3>
-                    <p>Beautiful, responsive websites that provide exceptional user experiences and convert visitors into customers.</p>
+                    <p>Beautiful, responsive websites that deliver exceptional user experiences and convert visitors into loyal customers.</p>
+                    <ul class="service-features">
+                        <li>UI/UX Design</li>
+                        <li>Responsive Development</li>
+                        <li>E-Commerce Solutions</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <!-- Software Development -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-number">03</div>
+                    <div class="service-icon-wrap">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Software Development</h3>
-                    <p>Custom software solutions tailored to your business needs. Web apps, mobile apps, and enterprise systems.</p>
+                    <p>Custom software solutions engineered for performance, scalability and reliability tailored to your unique requirements.</p>
+                    <ul class="service-features">
+                        <li>Web Applications</li>
+                        <li>Mobile Apps</li>
+                        <li>Enterprise Systems</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <!-- Digital Marketing -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <div class="service-card" data-aos="fade-up" data-delay="300">
+                    <div class="service-number">04</div>
+                    <div class="service-icon-wrap">
                         <i class="fas fa-bullhorn"></i>
                     </div>
                     <h3>Digital Marketing</h3>
-                    <p>Strategic digital marketing campaigns that drive traffic, engagement, and growth for your business online.</p>
+                    <p>Data-driven marketing strategies that increase visibility, drive qualified traffic, and maximize your ROI.</p>
+                    <ul class="service-features">
+                        <li>SEO & SEM</li>
+                        <li>Social Media Marketing</li>
+                        <li>Content Strategy</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -109,50 +222,91 @@
     <!-- ========== ABOUT SECTION ========== -->
     <section class="about" id="about">
         <div class="container">
-            <div class="about-wrapper">
-                <div class="about-image fade-in">
-                    <div class="img-box"></div>
-                    <div class="experience-box">
-                        <h3>8+</h3>
-                        <p>Years of Experience</p>
+            <div class="about-grid">
+                <div class="about-left">
+                    <div class="about-image-group">
+                        <div class="about-img about-img-main">
+                            <div class="about-img-placeholder">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="about-img about-img-secondary">
+                            <div class="about-img-placeholder secondary">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <div class="about-experience-badge">
+                            <div class="exp-number">8<sup>+</sup></div>
+                            <p>Years of<br>Excellence</p>
+                        </div>
+                        <div class="about-shape-dots"></div>
                     </div>
                 </div>
-                <div class="about-content fade-in">
-                    <h2>We Are Creative Digital Agency Based On Innovation</h2>
-                    <p>DesignFox is a full-service creative agency that combines strategy, design, and technology to help brands grow. We believe in creating meaningful digital experiences that resonate with your audience.</p>
-                    <p>Our team of experts brings together diverse skills and perspectives to deliver solutions that are not only beautiful but also functional and results-driven.</p>
-                    <ul class="about-features">
-                        <li><i class="fas fa-check-circle"></i> Creative Design</li>
-                        <li><i class="fas fa-check-circle"></i> Clean Code</li>
-                        <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
-                        <li><i class="fas fa-check-circle"></i> Fast Delivery</li>
-                        <li><i class="fas fa-check-circle"></i> Modern Technology</li>
-                        <li><i class="fas fa-check-circle"></i> SEO Optimized</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Start a Project</a>
+                <div class="about-right">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title left-align">We Are <span class="gradient-text">DesignFox</span> Creative Agency</h2>
+                    <p class="about-desc">We are a team of passionate designers, developers, and marketers dedicated to helping businesses succeed in the digital landscape. Our approach combines creativity with strategy to deliver results that exceed expectations.</p>
+                    <div class="about-features-grid">
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-rocket"></i></div>
+                            <div>
+                                <h4>Fast Delivery</h4>
+                                <p>Quick turnaround without compromising quality</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-shield-halved"></i></div>
+                            <div>
+                                <h4>Reliable Service</h4>
+                                <p>24/7 support with dedicated project managers</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                            <div>
+                                <h4>Creative Solutions</h4>
+                                <p>Innovative approaches to every challenge</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div>
+                                <h4>Data Driven</h4>
+                                <p>Decisions backed by analytics and research</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Start a Project</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== COUNTERS SECTION ========== -->
+    <!-- ========== COUNTER SECTION ========== -->
     <section class="counters">
         <div class="container">
-            <div class="counter-grid">
-                <div class="counter-item fade-in">
-                    <h3><span class="counter-number" data-target="350">0</span>+</h3>
+            <div class="counters-grid">
+                <div class="counter-box">
+                    <div class="counter-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3 class="counter-number" data-target="350">0</h3>
                     <p>Projects Completed</p>
                 </div>
-                <div class="counter-item fade-in">
-                    <h3><span class="counter-number" data-target="200">0</span>+</h3>
+                <div class="counter-box">
+                    <div class="counter-icon"><i class="fas fa-smile-beam"></i></div>
+                    <h3 class="counter-number" data-target="200">0</h3>
                     <p>Happy Clients</p>
                 </div>
-                <div class="counter-item fade-in">
-                    <h3><span class="counter-number" data-target="15">0</span>+</h3>
-                    <p>Team Members</p>
+                <div class="counter-box">
+                    <div class="counter-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3 class="counter-number" data-target="15">0</h3>
+                    <p>Team Experts</p>
                 </div>
-                <div class="counter-item fade-in">
-                    <h3><span class="counter-number" data-target="25">0</span>+</h3>
+                <div class="counter-box">
+                    <div class="counter-icon"><i class="fas fa-trophy"></i></div>
+                    <h3 class="counter-number" data-target="25">0</h3>
                     <p>Awards Won</p>
                 </div>
             </div>
@@ -162,53 +316,173 @@
     <!-- ========== PORTFOLIO SECTION ========== -->
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Our Portfolio</h2>
-                <div class="line"></div>
-                <p>Explore our latest work and see how we've helped businesses achieve their goals.</p>
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+                <p class="section-desc">Check out some of our recent work that showcases our creativity and expertise.</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-bg"></div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-thumb" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="portfolio-thumb-icon"><i class="fas fa-palette"></i></div>
+                    </div>
                     <div class="portfolio-overlay">
-                        <h4>Brand Identity</h4>
-                        <p>Graphic Design</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Graphic Design</span>
+                            <h4>Brand Identity System</h4>
+                            <p>Complete visual identity for tech startup</p>
+                        </div>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-bg"></div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-thumb" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="portfolio-thumb-icon"><i class="fas fa-laptop-code"></i></div>
+                    </div>
                     <div class="portfolio-overlay">
-                        <h4>E-Commerce Platform</h4>
-                        <p>Web Development</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Web Design</span>
+                            <h4>E-Commerce Platform</h4>
+                            <p>Modern online shopping experience</p>
+                        </div>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-bg"></div>
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-thumb" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="portfolio-thumb-icon"><i class="fas fa-mobile-alt"></i></div>
+                    </div>
                     <div class="portfolio-overlay">
-                        <h4>Mobile App UI</h4>
-                        <p>UI/UX Design</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Software Dev</span>
+                            <h4>Mobile Banking App</h4>
+                            <p>Fintech solution with biometric auth</p>
+                        </div>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-bg"></div>
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-thumb" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <div class="portfolio-thumb-icon"><i class="fas fa-chart-line"></i></div>
+                    </div>
                     <div class="portfolio-overlay">
-                        <h4>CRM System</h4>
-                        <p>Software Development</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Digital Marketing</span>
+                            <h4>Growth Campaign</h4>
+                            <p>300% increase in organic traffic</p>
+                        </div>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-bg"></div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-thumb" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="portfolio-thumb-icon"><i class="fas fa-pen-nib"></i></div>
+                    </div>
                     <div class="portfolio-overlay">
-                        <h4>Social Media Campaign</h4>
-                        <p>Digital Marketing</p>
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Graphic Design</span>
+                            <h4>Packaging Design</h4>
+                            <p>Premium product packaging suite</p>
+                        </div>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-bg"></div>
-                    <div class="portfolio-overlay">
-                        <h4>Corporate Website</h4>
-                        <p>Web Design</p>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-thumb" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                        <div class="portfolio-thumb-icon"><i class="fas fa-globe"></i></div>
                     </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Web Design</span>
+                            <h4>Corporate Website</h4>
+                            <p>Professional business web presence</p>
+                        </div>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING SECTION ========== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing Plans</span>
+                <h2 class="section-title">Flexible <span class="gradient-text">Pricing</span></h2>
+                <p class="section-desc">Choose the plan that fits your needs. All plans include our core features.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-plan">Starter</span>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="price">499</span>
+                            <span class="period">/project</span>
+                        </div>
+                        <p>Perfect for small businesses and startups</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Logo Design</li>
+                        <li><i class="fas fa-check"></i> 5-Page Website</li>
+                        <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                        <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                        <li><i class="fas fa-check"></i> 1 Month Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Social Media Management</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom Software</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-dark">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <span class="pricing-plan">Professional</span>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="price">999</span>
+                            <span class="period">/project</span>
+                        </div>
+                        <p>Ideal for growing businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full Brand Identity</li>
+                        <li><i class="fas fa-check"></i> 10-Page Website</li>
+                        <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                        <li><i class="fas fa-check"></i> Advanced SEO</li>
+                        <li><i class="fas fa-check"></i> 3 Months Support</li>
+                        <li><i class="fas fa-check"></i> Social Media Setup</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom Software</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-plan">Enterprise</span>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="price">2499</span>
+                            <span class="period">/project</span>
+                        </div>
+                        <p>Complete solution for large businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full Brand Identity</li>
+                        <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                        <li><i class="fas fa-check"></i> Custom Web Application</li>
+                        <li><i class="fas fa-check"></i> Full SEO Campaign</li>
+                        <li><i class="fas fa-check"></i> 12 Months Support</li>
+                        <li><i class="fas fa-check"></i> Social Media Management</li>
+                        <li><i class="fas fa-check"></i> Custom Software Dev</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-dark">Get Started</a>
                 </div>
             </div>
         </div>
@@ -217,50 +491,78 @@
     <!-- ========== TEAM SECTION ========== -->
     <section class="team" id="team">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Meet Our Team</h2>
-                <div class="line"></div>
-                <p>The creative minds behind DesignFox who make the magic happen.</p>
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Meet The <span class="gradient-text">Experts</span></h2>
+                <p class="section-desc">Our talented team of professionals who make the magic happen.</p>
             </div>
             <div class="team-grid">
-                <div class="team-card fade-in">
-                    <div class="team-avatar">👨‍💼</div>
-                    <h3>Alex Fernando</h3>
-                    <p class="role">Creative Director</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-img-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-social-overlay">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Alex Fernando</h4>
+                        <span>Creative Director</span>
                     </div>
                 </div>
-                <div class="team-card fade-in">
-                    <div class="team-avatar">👩‍💻</div>
-                    <h3>Sarah Perera</h3>
-                    <p class="role">Lead Developer</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-img-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="team-social-overlay">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Sarah Perera</h4>
+                        <span>Lead Developer</span>
                     </div>
                 </div>
-                <div class="team-card fade-in">
-                    <div class="team-avatar">👨‍🎨</div>
-                    <h3>Kevin Silva</h3>
-                    <p class="role">UI/UX Designer</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-img-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                            <i class="fas fa-user-pen"></i>
+                        </div>
+                        <div class="team-social-overlay">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Kevin Silva</h4>
+                        <span>UI/UX Designer</span>
                     </div>
                 </div>
-                <div class="team-card fade-in">
-                    <div class="team-avatar">👩‍📊</div>
-                    <h3>Nadeesha Jayawardena</h3>
-                    <p class="role">Marketing Strategist</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-img-placeholder" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="team-social-overlay">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Nadeesha Jayawardena</h4>
+                        <span>Marketing Strategist</span>
                     </div>
                 </div>
             </div>
@@ -270,43 +572,139 @@
     <!-- ========== TESTIMONIALS SECTION ========== -->
     <section class="testimonials" id="testimonials">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Client Testimonials</h2>
-                <div class="line"></div>
-                <p>What our clients say about working with us.</p>
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+                <p class="section-desc">Hear from our satisfied clients about their experience working with us.</p>
             </div>
-            <div class="testimonial-grid">
-                <div class="testimonial-card fade-in">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <p>DesignFox transformed our online presence completely. Their team delivered a stunning website that exceeded our expectations. Highly recommended!</p>
-                    <div class="testimonial-author">
-                        <div class="avatar">RK</div>
-                        <div>
-                            <h4>Ravindu Kumara</h4>
-                            <span>CEO, TechVenture</span>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"DesignFox transformed our online presence completely. Their team delivered a stunning website that exceeded our expectations and doubled our conversions within the first month."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">RK</div>
+                            <div class="author-info">
+                                <h4>Ravindu Kumara</h4>
+                                <span>CEO, TechVenture</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The digital marketing campaign they created for us was game-changing. We saw a 300% increase in organic traffic and our social media engagement skyrocketed."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">MW</div>
+                            <div class="author-info">
+                                <h4>Malini Wickramasinghe</h4>
+                                <span>Director, GreenLeaf Exports</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Professional, creative, and always on time. DesignFox built our custom ERP system flawlessly. They truly understand business needs and deliver beyond expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">AS</div>
+                            <div class="author-info">
+                                <h4>Ashan Senanayake</h4>
+                                <span>Founder, SmartRetail</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card fade-in">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <p>The digital marketing campaign they created for us doubled our online sales within three months. Their strategic approach is truly exceptional.</p>
-                    <div class="testimonial-author">
-                        <div class="avatar">MW</div>
-                        <div>
-                            <h4>Malini Wickramasinghe</h4>
-                            <span>Director, GreenLeaf Exports</span>
+                <div class="testimonial-nav">
+                    <button class="test-nav-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="test-nav-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BLOG SECTION ========== -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Blog</span>
+                <h2 class="section-title">Latest <span class="gradient-text">Insights</span></h2>
+                <p class="section-desc">Stay updated with the latest trends, tips, and insights from our team.</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-thumb" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+                        <div class="blog-thumb-icon"><i class="fas fa-paint-brush"></i></div>
+                        <span class="blog-date"><i class="far fa-calendar"></i> May 15, 2024</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-folder"></i> Design</span>
+                            <span><i class="far fa-comment"></i> 5 Comments</span>
                         </div>
+                        <h3><a href="#">Top 10 Graphic Design Trends That Will Dominate 2024</a></h3>
+                        <p>Discover the latest design trends from 3D illustrations to bold typography that are shaping the creative industry.</p>
+                        <a href="#" class="blog-read-more">
+                            <span>Read More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="testimonial-card fade-in">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <p>Professional, creative, and always on time. DesignFox built our custom ERP system flawlessly. They truly understand business needs.</p>
-                    <div class="testimonial-author">
-                        <div class="avatar">AS</div>
-                        <div>
-                            <h4>Ashan Senanayake</h4>
-                            <span>Founder, SmartRetail</span>
+                <div class="blog-card">
+                    <div class="blog-thumb" style="background: linear-gradient(135deg, #0f3443, #34e89e);">
+                        <div class="blog-thumb-icon"><i class="fas fa-search"></i></div>
+                        <span class="blog-date"><i class="far fa-calendar"></i> May 08, 2024</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-folder"></i> Marketing</span>
+                            <span><i class="far fa-comment"></i> 8 Comments</span>
                         </div>
+                        <h3><a href="#">SEO Strategies That Actually Work in the AI Era</a></h3>
+                        <p>Learn how to adapt your SEO strategy for the age of AI-powered search and stay ahead of the competition.</p>
+                        <a href="#" class="blog-read-more">
+                            <span>Read More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-thumb" style="background: linear-gradient(135deg, #2d1b69, #6b2fa0);">
+                        <div class="blog-thumb-icon"><i class="fas fa-rocket"></i></div>
+                        <span class="blog-date"><i class="far fa-calendar"></i> Apr 28, 2024</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-folder"></i> Development</span>
+                            <span><i class="far fa-comment"></i> 12 Comments</span>
+                        </div>
+                        <h3><a href="#">Why Your Business Needs a Custom Software Solution</a></h3>
+                        <p>Explore how custom software can streamline operations, reduce costs, and give your business a competitive edge.</p>
+                        <a href="#" class="blog-read-more">
+                            <span>Read More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -316,56 +714,72 @@
     <!-- ========== CONTACT SECTION ========== -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Get In Touch</h2>
-                <div class="line"></div>
-                <p>Ready to start your project? Contact us today and let's create something amazing together.</p>
+            <div class="section-header">
+                <span class="section-tag">Contact Us</span>
+                <h2 class="section-title">Let's Start a <span class="gradient-text">Project</span></h2>
+                <p class="section-desc">Ready to bring your vision to life? Get in touch with us today.</p>
             </div>
-            <div class="contact-wrapper">
-                <div class="contact-info fade-in">
-                    <h3>Let's Talk</h3>
-                    <p>Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <h4>Our Office</h4>
-                                <p>123 Creative Street, Colombo 07, Sri Lanka</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <h4>Email Us</h4>
-                                <p>hello@designfox.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                            <div>
-                                <h4>Call Us</h4>
-                                <p>+94 77 123 4567</p>
-                            </div>
-                        </div>
+            <div class="contact-grid">
+                <div class="contact-info-section">
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Visit Us</h4>
+                        <p>123 Creative Street<br>Colombo 07, Sri Lanka</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email Us</h4>
+                        <p>hello@designfox.com<br>support@designfox.com</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h4>Call Us</h4>
+                        <p>+94 77 123 4567<br>+94 11 234 5678</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="contact-form fade-in">
-                    <form>
+                <div class="contact-form-section">
+                    <form class="contact-form" id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
+                                <input type="text" placeholder="Your Name *" required>
+                                <span class="form-icon"><i class="fas fa-user"></i></span>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Your Email" required>
+                                <input type="email" placeholder="Your Email *" required>
+                                <span class="form-icon"><i class="fas fa-envelope"></i></span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number">
+                                <span class="form-icon"><i class="fas fa-phone"></i></span>
+                            </div>
+                            <div class="form-group">
+                                <select>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option>Graphic Design</option>
+                                    <option>Web Design</option>
+                                    <option>Software Development</option>
+                                    <option>Digital Marketing</option>
+                                </select>
+                                <span class="form-icon"><i class="fas fa-cog"></i></span>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
+                        <div class="form-group full-width">
+                            <textarea placeholder="Tell us about your project *" rows="5" required></textarea>
+                            <span class="form-icon textarea-icon"><i class="fas fa-comment-dots"></i></span>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -374,58 +788,68 @@
 
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="footer-logo">Design<span>Fox</span></div>
-                    <p>We are a creative digital agency that helps businesses grow through innovative design and technology solutions.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-about">
+                        <a href="#" class="footer-logo">Design<span class="highlight">Fox</span></a>
+                        <p>We are a creative digital agency that helps businesses grow through innovative design, development, and marketing solutions.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Graphic Design</a></li>
+                            <li><a href="#services">Web Design & Dev</a></li>
+                            <li><a href="#services">Software Development</a></li>
+                            <li><a href="#services">Digital Marketing</a></li>
+                            <li><a href="#services">SEO Optimization</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get the latest updates and insights delivered to your inbox.</p>
+                        <form class="footer-newsletter">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="button"><i class="fas fa-paper-plane"></i></button>
+                        </form>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#services">Graphic Design</a></li>
-                        <li><a href="#services">Web Design</a></li>
-                        <li><a href="#services">Software Development</a></li>
-                        <li><a href="#services">Digital Marketing</a></li>
-                        <li><a href="#services">SEO Optimization</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#team">Our Team</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to get the latest updates and offers.</p>
-                    <form style="margin-top: 15px; display: flex; gap: 10px;">
-                        <input type="email" placeholder="Your email" style="flex: 1; padding: 12px 15px; border: none; border-radius: 8px; background: rgba(255,255,255,0.05); color: #fff; font-family: inherit;">
-                        <button type="button" class="btn btn-primary" style="padding: 12px 20px; font-size: 0.85rem;">Subscribe</button>
-                    </form>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 DesignFox. All Rights Reserved. | Crafted with ❤️ by DesignFox Team</p>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 DesignFox. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <div class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+    <!-- ========== SCROLL TO TOP ========== -->
+    <button class="scroll-to-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
